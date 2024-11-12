@@ -12,7 +12,7 @@
     "lint:check": "eslint 'src/**/*.{ts,tsx}'",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
