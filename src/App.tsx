@@ -7,7 +7,7 @@ import { AppRoutes } from './routes/AppRoutes';
 export const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <AuthProvider>
           <AppRoutes />
         </AuthProvider>
