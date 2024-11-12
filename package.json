@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ITrips_front/welcome",
   "name": "uzhnuweb",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +10,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
     "lint:check": "eslint 'src/**/*.{ts,tsx}'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
